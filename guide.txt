@@ -1,0 +1,42 @@
+# Guide - en_US
+
+# You Can create a image running:
+# docker build -t mysql_db . (this command will create a image with this name) 
+# the char . will create a image using the Dockerfile
+
+# If you want to list all images in your descktop, you can running:
+# docker images
+
+# After, you can create a container running:
+# docker run --name myFirstDB -dti mysql_db
+# this will create a container with name myFirstDB from mysql_db image
+
+# If you want to list all containers activies your descktop, you can running:
+# docker ps
+
+# You can enter in container with command:
+# docker exec -it myFirstDB bin/bash 
+
+# After this, you can list the all folders with:
+# ls
+
+# One of the folders is docker-entrypoint-initdb.d, a default
+# folder created in the container creating
+
+# Enter in docker-entrypoint-initdb.d with command:
+# cd docker-entrypoint-initdb.d
+
+# run ls again. You probably see Casa_Adocao.sql.
+
+# If all works, you can run mysql -proot
+# with this command you entering in the database using the password 
+# configured in ENV (line 3)
+
+# run show databases;
+# then you can see all databases
+
+# if you want to make queries in the database, write the follow commands 
+# use Casa_Adocao;
+# show tables;
+
+# now, you can make queries in the database. 
