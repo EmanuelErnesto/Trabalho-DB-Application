@@ -29,7 +29,8 @@ Guia - pt_BR
 # Execute ls novamente. Provavelmente verá o arquivo Casa_Adocao.sql.
 
 # Se tudo funcionar, você pode executar: 
-# mysql -proot
+# mysql -p
+# Ele irá pedir a senha, então é só utilizar a senha root
 # Este comando permite entrar no banco de dados usando a senha configurada na variável de 
 # ambiente (ENV) na linha 3 do Dockerfile.
 
